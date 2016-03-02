@@ -1,7 +1,7 @@
 FROM gliderlabs/alpine
 MAINTAINER Joeri van Dooren <ure@mororless.be>
 
-RUN apk --update add apache2-webdav && rm -f /var/cache/apk/* && \
+RUN apk --update add apache2-webdav && rm -f /var/cache/apk/*
 
 mkdir /app && chown -R apache:apache /app && \
 mkdir /run/apache2/ && \
