@@ -1,11 +1,11 @@
 FROM gliderlabs/alpine
 MAINTAINER Joeri van Dooren <ure@mororless.be>
 
-RUN apk --update add apache2-webdav && rm -f /var/cache/apk/*
+RUN apk --update add apache2-webdav && rm -f /var/cache/apk/* && \
 
 mkdir /app && chown -R apache:apache /app && \
 mkdir /run/apache2/ && \
-chmod a+rwx /run/apache2/ && \
+chmod a+rwx /run/apache2/
 
 # Apache config
 ADD httpd.conf /etc/apache2/httpd.conf
