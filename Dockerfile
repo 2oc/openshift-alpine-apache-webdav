@@ -15,7 +15,7 @@ ADD scripts/run.sh /scripts/run.sh
 
 RUN mkdir /scripts/pre-exec.d && \
 mkdir /scripts/pre-init.d && \
-chmod -R 755 /scripts && chmod -R 755 /etc/ssmtp && chmod a+rw /etc/passwd
+chmod -R 755 /scripts && chmod a+rw /etc/passwd
 
 # test file
 ADD app/testfile /app/testfile
