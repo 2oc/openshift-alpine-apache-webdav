@@ -32,3 +32,5 @@ echo "openshift-wordpress:x:`id -u`:0:openshift-wordpress:/:/sbin/nologin" >> /e
 echo "[${STAMP}] Starting daemon..."
 # run apache httpd daemon
 httpd -D FOREGROUND
+
+sleep 1d;
