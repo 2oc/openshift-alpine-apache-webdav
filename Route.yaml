@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Route
 metadata:
-  name: www
+  name: webdav
 spec:
   to:
     kind: Service
-    name: apache-php
+    name: webdav
