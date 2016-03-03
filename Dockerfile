@@ -20,6 +20,9 @@ chmod -R 755 /scripts && chmod a+rw /etc/passwd
 # test file
 ADD app/dav/testfile /app/dav/testfile
 
+# add password file
+ADD app/users.password /app/users.password
+
 # Exposed Port
 EXPOSE 8080
 
